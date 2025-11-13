@@ -60,7 +60,7 @@ medios.h
 delanteros.h.
 
 ## Instrucciones de Ejecución
-    1. Asegúrate de tener instalado un compilador de C++ (g++, clang o MinGW).
+    1. Asegúrate de tener instalado un compilador de C++.
 
     2. Guarda los archivos en una misma carpeta:
 
@@ -76,13 +76,9 @@ delanteros.h.
 
     3. Abre tu terminal y navega a esa carpeta.
 
-    4. Compila el programa con:
+    4. Compila el programa.
 
-        g++ CRUZAZUL.cpp -o cruzazul
-
-
-    5. Ejecuta el programa:
-        ./cruzazul
+    5. Ejecuta el programa.
     
     6. Sigue las instrucciones del menú para registrar jugadores.
 
