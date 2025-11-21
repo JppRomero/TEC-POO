@@ -36,25 +36,26 @@ public:
 
     // Get
 
-    string getNombres() const {
+    string getNombres(){
         return nombrejug;
     }
 
-    int getDorsal() const {
+    int getDorsal(){
         return dorsaljug;
     }
 
-    int getBalonesParados() const {
+    int getBalonesParados(){
         return balonesparados;
     }
 
     // Mostrar Info
 
-    void mostrarinfo() const{
+    void mostrarinfo(){
         cout << "\n ---Portero Del Cruz Azul---" << endl;
         cout << "Nombre del Portero : " << nombrejug << endl;
         cout << "Dorsal del Portero : " << dorsaljug << endl;
         cout << "Atajadas de " << nombrejug 
         << " Es de : " << balonesparados << endl;
     }
+
 };
