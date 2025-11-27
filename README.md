@@ -72,17 +72,17 @@ main.cpp
 
     2. Guarda los archivos en una misma carpeta:
 
-        CAZporteros.h
+        CAZporteros.h (herencia)
 
-        CAZdefensas.h
+        CAZdefensas.h (herencia)
 
-        CAZmedios.h
+        CAZmedios.h (herencia)
 
-        CAZdelanteros.h
+        CAZdelanteros.h (herencia)
 
-        Jugador.h
+        Jugador.h (clase base/padre)
 
-        Equipo.h
+        Equipo.h (composicion)
 
         main.cpp (main)
 
@@ -99,6 +99,10 @@ main.cpp
 
 ## ¿Para qué SÍ sirve este proyecto?
 Practicar POO básica en C++ e ir aprendiendo mas.
+
+Poder poner informacion relevante sobre jugadores de futbol.
+
+Poder ver la informacion dada de una manera mas sostificada.
 
 ## ¿Para qué NO sirve este proyecto (todavía)?
 
