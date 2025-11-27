@@ -1,32 +1,26 @@
+// Herencia para los Porteros del Cruz Azul
+#ifndef CAZPORTEROS_H_
+#define CAZPORTEROS_H_
+
 #include <iostream>
 #include <string>
+#include "Jugador.h"
+
 using namespace std;
 
 // Porteros del Cruz Azul
-class CAZporteros {
+class CAZporteros: public Jugador{
 
 private:
-    string nombrejug;
-    int dorsaljug;
     int balonesparados;
 
 public:
     // Constructor 
-    CAZporteros (string nm = "", int dj = 0, int bp = 0)
-    : nombrejug(nm), dorsaljug(dj), balonesparados(bp){}
+    CAZporteros(): Jugador("", 0), balonesparados(0){}
+    CAZporteros(string nm, int dj, int bp)
+    :Jugador (nm, dj), balonesparados (bp){}
 
     // Set
-    void setNombres(string nm){
-        nombrejug = nm;
-    }
-
-    void setDorsal(int dj){
-        if (dj > 0 && dj <= 99)
-            dorsaljug = dj;
-        else
-            cout << "El Dorsal Tiene que ser un Numero del 1 al 99" << endl;
-    }
-
     void setBalonesParados(int bp){
         if (bp >= 0)
             balonesparados =  bp;
@@ -35,15 +29,6 @@ public:
     }
 
     // Get
-
-    string getNombres(){
-        return nombrejug;
-    }
-
-    int getDorsal(){
-        return dorsaljug;
-    }
-
     int getBalonesParados(){
         return balonesparados;
     }
@@ -51,11 +36,9 @@ public:
     // Mostrar Info
 
     void mostrarinfo(){
-        cout << "\n ---Portero Del Cruz Azul---" << endl;
-        cout << "Nombre del Portero : " << nombrejug << endl;
-        cout << "Dorsal del Portero : " << dorsaljug << endl;
-        cout << "Atajadas de " << nombrejug 
-        << " Es de : " << balonesparados << endl;
+        cout << "\n Portero Del Cruz Azul" << endl;
+        Jugador :: mostrarinfo();
+        cout << "Las Atajadas del portero es de: "<< balonesparados << endl;
     }
-
 };
+#endif // CAZPORTEROS_H_
