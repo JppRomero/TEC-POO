@@ -50,7 +50,7 @@ El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemáti
         8. Mostrar los datos de cada jugador por su posición
 
         FIN
-## Archivos .h personalizados (clases) 
+## Archivos .h personalizados (clase base, herencia y agrupacion) y main.cpp
 Se incluyen archivos como:
 
 CAZporteros.h
