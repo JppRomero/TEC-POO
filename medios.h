@@ -1,32 +1,27 @@
+// Herencia para los Mediocampistas del Cruz Azul
+
+#ifndef CAZMEDIOS_H_
+#define CAZMEDIOS_H_
+
 #include <iostream>
 #include <string>
+#include "Jugador.h"
+
 using namespace std;
 
 // MedioCampistas del Cruz Azul
-class CAZmedios {
+class CAZmedios: public Jugador{
 
 private:
-    string nombrejug;
-    int dorsaljug;
     int pases;
 
 public:
     // Constructor 
-    CAZmedios (string nm = "", int dj = 0, int p = 0)
-    : nombrejug(nm), dorsaljug(dj), pases(p){}
+    CAZmedios(): Jugador("", 0), pases(0){}
+    CAZmedios (string nm, int dj, int p)
+    :Jugador(nm, dj), pases(p){}
 
     // Set
-    void setNombres(string nm){
-        nombrejug = nm;
-    }
-
-    void setDorsal(int dj){
-        if (dj > 0 && dj <= 99)
-            dorsaljug = dj;
-        else
-            cout << "El Dorsal Tiene que ser un Numero del 1 al 99" << endl;
-    }
-
     void setPases(int p){
         if (p >= 0)
             pases =  p;
@@ -35,15 +30,6 @@ public:
     }
 
     // Get
-
-    string getNombres(){
-        return nombrejug;
-    }
-
-    int getDorsal(){
-        return dorsaljug;
-    }
-
     int getPases(){
         return pases;
     }
@@ -51,11 +37,9 @@ public:
     // Mostrar Info
 
     void mostrarinfo(){
-        cout << "\n ---MedioCampistas Del Cruz Azul---" << endl;
-        cout << "Nombre del MedioCampista : " << nombrejug << endl;
-        cout << "Dorsal del MedioCampista : " << dorsaljug << endl;
-        cout << "Los Pases de " << nombrejug 
-        << " son de : " << pases << endl;
+        cout << "\n Medio Del Cruz Azul" << endl;
+        Jugador :: mostrarinfo();
+        cout << "Los Pases del Jugador son de : " << pases << endl;
     }
-
 };
+#endif // CAZMEDIOS_H_
