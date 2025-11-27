@@ -2,9 +2,8 @@
 # Sistema de Gestión de Jugadores del Cruz Azul (POO en C++).
 Este programa fue creado para practicar los fundamentos de POO, usando un ejemplo cercano y fácil de entender: los jugadores del equipo Cruz Azul.
 
-Aquí se puede registrar diferentes jugadores según su posición —porteros, defensas, mediocampistas y delanteros— y almacenar información básica como su nombre, dorsal y estadísticas individuales (goles, pases, atajadas o balones bloqueados).
+Aquí se puede registrar diferentes jugadores según su posición para juntarlos en un equipo —porteros, defensas, mediocampistas y delanteros— y almacenar información básica como su nombre, dorsal y estadísticas individuales (goles, pases, atajadas o balones bloqueados).
 
-Este proyecto es una base sólida que seguirá creciendo durante el semestre conforme se introduzcan nuevos temas de POO.
 ## Sobre Mi
 Autor: Juan Pablo Romero Anaya
 Carrera: Ingeniería en Tecnologías Computacionales (ITC)
@@ -17,6 +16,7 @@ El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemáti
 
 ## Algoritmo (12/11/2025)
         1. Mostrar un mensaje que pida al usuario seleccionar una opción del menú.
+                                            (ciclo)
 
         2. Preguntar qué tipo de jugador desea registrar:
 
@@ -28,11 +28,11 @@ El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemáti
 
             Delantero
 
-        3. Verificar que la opción elegida sea válida; si no, mostrar error.
+            Salir del Programa
 
-        4. Solicitar cuántos jugadores se registrarán (máximo dependiendo de la posición).
+        3. Verificar que la opción elegida sea válida; si no, Sale del programa.
 
-        5. Crear un arreglo de objetos de la clase correspondiente.
+        4. Crear un arreglo de objetos de la clase correspondiente.
 
         6. PARA cada jugador:
 
@@ -42,57 +42,65 @@ El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemáti
 
             Pedir la estadística específica según la posición
 
-            Guardar estos datos con los setters
+            Guardar estos datos 
 
 
-        7. Mostrar los datos de cada jugador con el método mostrarinfo().
+        7. Repetir el Ciclo hasta que el usuario quiera
+
+        8. Mostrar los datos de cada jugador por su posición
 
         FIN
 ## Archivos .h personalizados (clases) 
 Se incluyen archivos como:
 
-portero.h
+CAZporteros.h
 
-defensas.h
+CAZdefensas.h
 
-medios.h
+CAZmedios.h
 
-delanteros.h.
+CAZdelanteros.h
+
+Jugador.h
+
+Equipo.h
+
+main.cpp
 
 ## Instrucciones de Ejecución
-    1. Asegúrate de tener instalado un compilador de C++.
+    1. Asegúrate de tener instalado un compilador de C++ (g++, clang o MinGW).
 
     2. Guarda los archivos en una misma carpeta:
 
-        CRUZAZUL.cpp (main)
+        CAZporteros.h
 
-        portero.h
+        CAZdefensas.h
 
-        defensas.h
+        CAZmedios.h
 
-        medios.h
+        CAZdelanteros.h
 
-        delanteros.h
+        Jugador.h
+
+        Equipo.h
+
+        main.cpp (main)
 
     3. Abre tu terminal y navega a esa carpeta.
 
-    4. Compila el programa.
+    4. Compila el programa con:
 
-    5. Ejecuta el programa.
+        g++ main.cpp 
+
+
+    5. Ejecuta el programa
     
-    6. Sigue las instrucciones del menú para registrar jugadores.
+    6. Sigue las instrucciones del menú para registrar jugadores y verlos.
 
 ## ¿Para qué SÍ sirve este proyecto?
-Practicar POO básica en C++ e ir avanzando poco a poco,
-en el transcuros del mes.
+Practicar POO básica en C++ e ir aprendiendo mas.
 
 ## ¿Para qué NO sirve este proyecto (todavía)?
-
-No guarda datos en archivos.
-
-No maneja herencia (por ahora).
-
-No tiene diagramas UML incorporados.
 
 No permite editar o eliminar jugadores ya registrados.
 
@@ -112,5 +120,6 @@ No calcula estadísticas avanzadas del equipo.
 #### Hay Una relacion con el Equipo de Cruz Azul
 
 No, este proyecto es completamente con fines Academicos.
+
 
 
