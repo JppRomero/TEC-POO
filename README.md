@@ -70,34 +70,80 @@ Equipo.h
 main.cpp
 
 ## Instrucciones de Ejecución
-    1. Asegúrate de tener instalado un compilador de C++ (g++, clang o MinGW).
+        1. Instalar un compilador de C++
 
-    2. Guarda los archivos en una misma carpeta:
+        Puedes usar cualquiera de los siguientes:
 
-        CAZporteros.h (herencia)
+                g++ (Linux / Windows MinGW / MSYS2)
 
-        CAZdefensas.h (herencia)
+                clang++ (MacOS)
 
-        CAZmedios.h (herencia)
+                MinGW-w64 (Windows)
 
-        CAZdelanteros.h (herencia)
+        Cualquiera funciona con este proyecto.
 
-        Jugador.h (clase base/padre)
+        2. Asegúrate de tener todos los archivos juntos en una sola carpeta:
+                CAZporteros.h
+                CAZdefensas.h
+                CAZmedios.h
+                CAZdelanteros.h
+                Jugador.h
+                Equipo.h
+                CAZporteros.cpp
+                CAZdefensas.cpp
+                CAZmedios.cpp
+                CAZdelanteros.cpp
+                Equipo.cpp
+                main.cpp
 
-        Equipo.h (composicion)
 
-        main.cpp (main)
+                Los .h contienen las clases.
+                Los .cpp contienen las implementaciones.
 
-    3. Abre tu terminal y navega a esa carpeta.
+        3. Abrir una terminal dentro de la carpeta del proyecto
 
-    4. Compila el programa con:
+        Ejemplos:
 
-        g++ main.cpp 
+                Windows PowerShell / CMD
+
+                cd ruta\de\tu\carpeta
 
 
-    5. Ejecuta el programa
-    
-    6. Sigue las instrucciones del menú para registrar jugadores y verlos.
+                MSYS2 / Linux / Mac
+
+                cd /ruta/de/tu/carpeta
+
+        4. Compilar el proyecto
+
+                Compila todos los archivos a la vez:
+
+                g++ -std=c++17 *.cpp -o main
+
+
+        En Windows puede ser:
+
+                g++ -std=c++17 *.cpp -o main.exe
+
+        5. Ejecutar el programa
+
+                Windows PowerShell / CMD
+
+                        .\main.exe
+
+
+                MSYS2 / Linux / Mac
+
+                        ./main
+
+        6. Uso del programa
+
+Una vez iniciado:
+
+Elige la opción del menú.
+
+Registra jugadores por tipo (portero, defensa, medio, delantero).
+
+Consulta la lista completa del equipo.
 
 ## ¿Para qué SÍ sirve este proyecto?
 Practicar POO básica en C++ e ir aprendiendo mas.
