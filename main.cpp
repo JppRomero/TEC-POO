@@ -44,7 +44,7 @@ int main() {
         // repetimos mientras la opcion sea invalida.
 
         while (!validarEntero(opcion) || !validarRango(opcion, 1, 6)) {
-            cout << "Opcion invalida, intenta de nuevo de favor: ";
+            cout << "Opcion invalida. Intenta de nuevo: ";
         }
 
 
