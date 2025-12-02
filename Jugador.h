@@ -7,6 +7,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// Clase Base Jugador 
 
 class Jugador{
 
@@ -15,37 +16,21 @@ protected:
     int dorsaljug;
 public:
     // constructor
-    Jugador (string nm = "", int dj = 0)
-    : nombrejug(nm), dorsaljug(dj){}
+    Jugador (string nm = "", int dj = 0);
     
     // Set
-    void setNombres(string nm){
-        nombrejug = nm;
-    }
+    void setNombres(string nm);
 
-    void setDorsal(int dj){
-        if (dj > 0 && dj <= 99)
-            dorsaljug = dj;
-        else
-            cout << "El Dorsal Tiene que ser un Numero del 1 al 99" << endl;
-    }
+    void setDorsal(int dj);
 
     // Get
 
-    string getNombres(){
-        return nombrejug;
-    }
-
-    int getDorsal(){
-        return dorsaljug;
-    }
+    string getNombres();
+    int getDorsal();
     
     // Mostrar Info
 
-    void mostrarinfo(){
-        cout << "Nombre del Jugador: " << nombrejug << endl;
-        cout << "Dorsal del Jugador: " << dorsaljug << endl;
-    }
+    void mostrarinfo();
 };
 
 #endif // JUGADOR_H_
