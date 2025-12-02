@@ -15,31 +15,17 @@ private:
     int balonesbloqueados;
 
 public:
-    // Constructor 
-    CAZdefensas(): Jugador("", 0), balonesbloqueados(0){}
-    CAZdefensas(string nm, int dj, int bb)
-    :Jugador(nm, dj), balonesbloqueados (bb){}
+    // Constructor
+    CAZdefensas(string nm = "", int dj = 0, int bb = 0);
 
     // Set
-    void setBalonesBloqueados(int bb){
-        if (bb >= 0)
-            balonesbloqueados =  bb;
-        else
-            cout << "Los balones bloqueados no pueden ser negativos" << endl;
-    }
+    void setBalonesBloqueados(int bb);
 
     // Get
 
-    int getBalonesBloqueados(){
-        return balonesbloqueados;
-    }
-
+    int getBalonesBloqueados();
     // Mostrar Info
 
-    void mostrarinfo(){
-        cout << "\n Defensa Del Cruz Azul" << endl;
-        Jugador :: mostrarinfo();
-        cout << "Los Balones Bloqueados son : " << balonesbloqueados << endl;
-    }
+    void mostrarinfo();
 };
 #endif // CAZDEFENSAS_H_
