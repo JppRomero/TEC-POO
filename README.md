@@ -50,6 +50,8 @@ El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemáti
         8. Mostrar los datos de cada jugador por su posición
 
         FIN
+## Diagrama de Clases
+![Logo] (https://raw.githubusercontent.com/JppRomero/TEC-POO/refs/heads/main/diagrama%20de%20clasess.png)
 ## Archivos .h personalizados (clase base, herencia y agrupacion) y main.cpp
 Se incluyen archivos como:
 
