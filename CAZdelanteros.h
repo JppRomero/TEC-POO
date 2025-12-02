@@ -15,31 +15,18 @@ private:
 
 public:
     // Constructor 
-    CAZdelanteros(): Jugador("", 0), goles(0){}
-    CAZdelanteros (string nm, int dj, int g)
-    :Jugador (nm,dj), goles(g){}
+    CAZdelanteros (string nm = "", int dj = 0, int g = 0);
 
     // Set
 
-    void setGoles(int g){
-        if (g >= 0)
-            goles =  g;
-        else
-            cout << "Los Goles no pueden ser negativos" << endl;
-    }
+    void setGoles(int g);
 
     // Get
 
-    int getGoles(){
-        return goles;
-    }
+    int getGoles();
 
     // Mostrar Info
 
-    void mostrarinfo(){
-        cout << "\n Delantero Del Cruz Azul" << endl;
-        Jugador :: mostrarinfo();
-        cout << "Los Goles del Jugador son de : " << goles << endl;
-    }
+    void mostrarinfo();
 };
 #endif // CAZDELANTEROS_H_
