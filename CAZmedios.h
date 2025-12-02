@@ -17,29 +17,16 @@ private:
 
 public:
     // Constructor 
-    CAZmedios(): Jugador("", 0), pases(0){}
-    CAZmedios (string nm, int dj, int p)
-    :Jugador(nm, dj), pases(p){}
+    CAZmedios (string nm = "", int dj = 0, int p = 0);
 
     // Set
-    void setPases(int p){
-        if (p >= 0)
-            pases =  p;
-        else
-            cout << "Los Pases no pueden ser negativos" << endl;
-    }
+    void setPases(int p);
 
     // Get
-    int getPases(){
-        return pases;
-    }
+    int getPases();
 
     // Mostrar Info
 
-    void mostrarinfo(){
-        cout << "\n Medio Del Cruz Azul" << endl;
-        Jugador :: mostrarinfo();
-        cout << "Los Pases del Jugador son de : " << pases << endl;
-    }
+    void mostrarinfo();
 };
 #endif // CAZMEDIOS_H_
