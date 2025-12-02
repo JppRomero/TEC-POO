@@ -51,7 +51,7 @@ El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemáti
 
         FIN
 ## Diagrama de Clases
-![Logo] (https://raw.githubusercontent.com/JppRomero/TEC-POO/refs/heads/main/diagrama%20de%20clasess.png)
+![Logo] ([https://pbs.twimg.com/media/G7Gn2reXUAAtwX2.jpg](https://raw.githubusercontent.com/JppRomero/TEC-POO/refs/heads/main/diagrama%20de%20clasess.png))
 ## Archivos .h personalizados (clase base, herencia y agrupacion) y main.cpp
 Se incluyen archivos como:
 
