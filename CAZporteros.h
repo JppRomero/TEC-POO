@@ -16,29 +16,16 @@ private:
 
 public:
     // Constructor 
-    CAZporteros(): Jugador("", 0), balonesparados(0){}
-    CAZporteros(string nm, int dj, int bp)
-    :Jugador (nm, dj), balonesparados (bp){}
+    CAZporteros(string nm = "", int dj = 0, int bp = 0);
 
     // Set
-    void setBalonesParados(int bp){
-        if (bp >= 0)
-            balonesparados =  bp;
-        else
-            cout << "Las Atajadas no pueden ser negativas" << endl;
-    }
+    void setBalonesParados(int bp);
 
     // Get
-    int getBalonesParados(){
-        return balonesparados;
-    }
+    int getBalonesParados();
 
     // Mostrar Info
 
-    void mostrarinfo(){
-        cout << "\n Portero Del Cruz Azul" << endl;
-        Jugador :: mostrarinfo();
-        cout << "Las Atajadas del portero es de: "<< balonesparados << endl;
-    }
+    void mostrarinfo();
 };
 #endif // CAZPORTEROS_H_
