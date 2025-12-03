@@ -150,6 +150,7 @@ main.cpp
                 Registra jugadores por tipo (portero, defensa, medio, delantero).
 
                 Consulta la lista completa del equipo.
+## Link de Videos de Apoyo para Ejecucion (Windows y Mac)
 
 ## ¿Para qué SÍ sirve este proyecto?
 Practicar POO básica en C++ e ir aprendiendo mas.
