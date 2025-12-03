@@ -154,6 +154,8 @@ main.cpp
 ## Link de Videos de Apoyo para Ejecucion (Windows y Mac)
 [![Windows](https://www.youtube.com/watch?v=mvrCoPSg_FE/0.jpg)](https://www.youtube.com/watch?v=mvrCoPSg_FE " Windows ")
 
+[![MacOs](https://m.youtube.com/watch?v=wCCRmx3JTWU/0.jpg)](https://m.youtube.com/watch?v=wCCRmx3JTWU "MacOs")
+
 ## ¿Para qué SÍ sirve este proyecto?
 Practicar POO básica en C++ e ir aprendiendo mas.
 
