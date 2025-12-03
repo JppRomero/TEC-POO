@@ -99,6 +99,7 @@ main.cpp
                 CAZdefensas.cpp
                 CAZmedios.cpp
                 CAZdelanteros.cpp
+                Jugador.cpp
                 Equipo.cpp
                 main.cpp
 
