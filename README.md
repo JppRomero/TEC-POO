@@ -152,6 +152,7 @@ main.cpp
 
                 Consulta la lista completa del equipo.
 ## Link de Videos de Apoyo para Ejecucion (Windows y Mac)
+[![Windows](https://www.youtube.com/watch?v=mvrCoPSg_FE/0.jpg)](https://www.youtube.com/watch?v=mvrCoPSg_FE " Windows ")
 
 ## ¿Para qué SÍ sirve este proyecto?
 Practicar POO básica en C++ e ir aprendiendo mas.
