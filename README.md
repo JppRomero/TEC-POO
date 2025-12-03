@@ -56,16 +56,22 @@ El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemáti
 Se incluyen archivos como:
 
 CAZporteros.h
+CAZporteros.cpp
 
 CAZdefensas.h
+CAZdefensas.cpp
 
 CAZmedios.h
+CAZmedios.cpp
 
 CAZdelanteros.h
+CAZdelanteros.cpp
 
 Jugador.h
+Jugador.cpp
 
 Equipo.h
+Equipo.cpp
 
 main.cpp
 
@@ -117,33 +123,33 @@ main.cpp
 
                 Compila todos los archivos a la vez:
 
-                g++ -std=c++17 *.cpp -o main
+                g++ -std=c++17 *.cpp -o cruzazul
 
 
         En Windows puede ser:
 
-                g++ -std=c++17 *.cpp -o main.exe
+                g++ -std=c++17 *.cpp -o cruzazul.exe
 
         5. Ejecutar el programa
 
                 Windows PowerShell / CMD
 
-                        .\main.exe
+                        .\cruzazul.exe
 
 
                 MSYS2 / Linux / Mac
 
-                        ./main
+                        ./cruzazul
 
         6. Uso del programa
 
-Una vez iniciado:
+        Una vez iniciado:
 
-Elige la opción del menú.
+        Elige la opción del menú.
 
-Registra jugadores por tipo (portero, defensa, medio, delantero).
+                Registra jugadores por tipo (portero, defensa, medio, delantero).
 
-Consulta la lista completa del equipo.
+                Consulta la lista completa del equipo.
 
 ## ¿Para qué SÍ sirve este proyecto?
 Practicar POO básica en C++ e ir aprendiendo mas.
