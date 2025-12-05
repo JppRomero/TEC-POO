@@ -1,31 +1,41 @@
-// Herencia para los Defensas del Cruz Azul
+// CAZdefensas.h el cual contiene la definicion
+// de la clase CAZdefensas
+// que hereda de la clase Jugador,
+// agregando atributos y metodos
+// especificos para los defensas.
+
 #ifndef CAZDEFENSAS_H_
 #define CAZDEFENSAS_H_
-
+// Inclusiones necesarias.
 #include <iostream>
 #include <string>
 #include "Jugador.h"
 
 using namespace std;
 
-// Defensas del Cruz Azul
-class CAZdefensas: public Jugador{
+// Definicion de la clase CAZdefensas,
+// el cual hereda de la clase Jugador.
 
+class CAZdefensas: public Jugador{
+// Atributos privados especificos de los defensas.
 private:
     int balonesbloqueados;
-
+// Ponemos los metodos publicos de la clase CAZdefensas.
 public:
-    // Constructor
+    // Constructor el cual inicializa los atributos.
     CAZdefensas(string nm = "", int dj = 0, int bb = 0);
 
-    // Set
+    // Creamos el Setter necesario.
     void setBalonesBloqueados(int bb);
 
-    // Get
+    // Creamos el Getter necesario.
 
     int getBalonesBloqueados();
-    // Mostrar Info
+
+    // Creamos el metodo para mostrar
+    // la informacion del defensa.
 
     void mostrarinfo();
 };
+// Fin de la definicion de la clase CAZdefensas.
 #endif // CAZDEFENSAS_H_
