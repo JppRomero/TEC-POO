@@ -1,3 +1,5 @@
+// main.cpp el cual contiene el menu interactivo
+// para gestionar el equipo de futbol Cruz Azul
 #include "Equipo.h"
 #include <iostream>
 #include <string>
@@ -22,7 +24,7 @@ bool validarEntero(int &x) {
 bool validarRango(int x, int min, int max) {
     return (x >= min && x <= max);
 }
-
+// Funcion principal
 int main() {
     Equipo CruzAzul;
 
@@ -59,16 +61,17 @@ int main() {
             
             cout << "Nombre del Jugador: ";
             getline(cin, nombre);
-            // Validacion del dorsal y estadistica del jugador
+            // Validacion del dorsal del jugador
             cout << "Dorsal del Jugador: ";
             while (!validarEntero(dorsal)) {
                 cout << "Dorsal invalido. Intenta de nuevo: ";
             }
+            // Estadistica segun el tipo de jugador y validacion
             cout << "Estadistica del Jugador: ";
             while (!validarEntero(stat)) {
                 cout << "Estadistica invalida. Intenta de nuevo: ";
             }
-            // Agregar jugador segun la opcion elegida
+            // Agreamos el jugador segun la opcion elegida
 
             if (opcion == 1)
                 CruzAzul.agregarPortero(nombre, dorsal, stat);
@@ -82,7 +85,7 @@ int main() {
             if (opcion == 4) 
                 CruzAzul.agregarDelantero(nombre, dorsal, stat);
         }
-        // Mostrar equipo si la opcion es 5
+        // Mostramos el equipo si la opcion es 5
         if (opcion == 5)
             CruzAzul.mostrarEquipo();
 
@@ -91,3 +94,7 @@ int main() {
     cout << "Hasta luego!!!!" << endl;
     return 0;
 }
+// Fin de la funcion principal
+// main.cpp
+// El programa ha sido completado exitosamente.
+// Fin del archivo main.cpp- Juan Pablo Romero Anaya- 5/12/2025- A01715182.
