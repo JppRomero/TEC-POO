@@ -1,10 +1,12 @@
-// Equipo.h el cual es la composicion del equipo Cruz Azul,
-// contiene arreglos de los diferentes tipos de jugadores
-// y metodos para agregar jugadores y mostrar la informacion del equipo.
+// Equipo.h el cual contiene la definicion
+// de la clase Equipo, el cual es una composicion
+// de diferentes tipos de jugadores (CAZporteros, CAZdefensas,
+// CAZmedios, CAZdelanteros) y proporciona metodos  
+// para agregar jugadores y mostrar la informacion del equipo.
 
 #ifndef EQUIPO_H_
 #define EQUIPO_H_
-
+// Inclusiones necesarias.
 #include <iostream>
 #include <string>
 #include "CAZporteros.h"
@@ -13,9 +15,12 @@
 #include "CAZdelanteros.h"
 
 using namespace std;
+// Definicion de la clase Equipo.
+// el cual es la composicion de 
+// diferentes tipos de jugadores.
 
 class Equipo {
-// Atributos: arreglos para cada tipo de jugador
+// Atributos privados de la clase Equipo.
 private:
     CAZporteros porteros[3];
     int cantPorteros;
@@ -29,10 +34,11 @@ private:
     CAZdelanteros delanteros[3];
     int cantDelanteros;
 
+// Ponemos los metodos publicos de la clase Equipo.
 public:
-    // constructor
+    // Constructor de la clase Equipo.
     Equipo();
-    // Metodos para agregar a los jugadores
+    // Creamos los metodos para agregar jugadores al equipo.
     void agregarPortero(string nm, int dj, int bp);
 
     void agregarDefensa(string nm, int dj, int bb);
@@ -41,7 +47,8 @@ public:
 
     void agregarDelantero(string nm, int dj, int g);
 
-    // Mostramos a todo el equipo
+    // Creamos el metodo para mostrar la informacion del equipo.
     void mostrarEquipo();
 };
+// Fin de la definicion de la clase Equipo.
 #endif // EQUIPO_H_
