@@ -152,9 +152,9 @@ main.cpp
 
                 Consulta la lista completa del equipo.
 ## Link de Videos de Apoyo para Ejecucion (Windows y Mac)
-[![Windows](https://www.youtube.com/watch?v=mvrCoPSg_FE/0.jpg)](https://www.youtube.com/watch?v=mvrCoPSg_FE " Windows ")
+[![Windows]([https://www.youtube.com/watch?v=mvrCoPSg_FE/0.jpg](https://www.cloudmasters.es/wp-content/uploads/2021/06/Windows-11-Hero-Bloom-Logo.jpg))](https://www.youtube.com/watch?v=mvrCoPSg_FE " Windows ")
 
-[![MacOs](https://m.youtube.com/watch?v=wCCRmx3JTWU/0.jpg)](https://m.youtube.com/watch?v=wCCRmx3JTWU "MacOs")
+[![MacOs](https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg)](https://m.youtube.com/watch?v=wCCRmx3JTWU "MacOs")
 
 ## ¿Para qué SÍ sirve este proyecto?
 Practicar POO básica en C++ e ir aprendiendo mas.
