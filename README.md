@@ -14,7 +14,7 @@ Fecha: 12/11/2025 - 5/12/2025
 
 El Sistema de Gestión de Jugadores del Cruz Azul busca resolver una problemática común al aprender POO:
 
-## Algoritmo (12/11/2025)
+## Algoritmo
         1. Mostrar un mensaje que pida al usuario seleccionar una opción del menú.
                                             (ciclo)
 
